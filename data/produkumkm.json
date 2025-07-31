@@ -1,44 +1,86 @@
 [
-    {
-        "namaumkm" : "Toko Berkah",
-        "nama" : "Ranginang",
-        "harga" : "Rp. 12000",
-        "deskripsi" : "Ranginang adalah makanan yang tradisional",
-        "gambar": "1752160861-download.jpeg"
-    },
-    {
-        "namaumkm" : "Toko Berkah",
-        "nama" : "Ranginang",
-        "harga" : "Rp. 12000",
-        "deskripsi" : "Ranginang adalah makanan yang tradisional",
-        "gambar": "1752160861-download.jpeg"
-    },
-    {
-        "namaumkm" : "Toko Berkah",
-        "nama" : "Ranginang",
-        "harga" : "Rp. 12000",
-        "deskripsi" : "Ranginang adalah makanan yang tradisional",
-        "gambar": "1752160861-download.jpeg"
-    },
-    {
-        "namaumkm" : "Toko Kerajinan Bambu",
-        "nama" : "Pas Bunga",
-        "harga" : "Rp. 12000",
-        "deskripsi" : "Pas Bunga dari anyaman bambu",
-        "gambar": "1752160861-download.jpeg"
-    },
-    {
-        "namaumkm" : "Toko Kerajinan Bambu",
-        "nama" : "Pas Bunga",
-        "harga" : "Rp. 12000",
-        "deskripsi" : "Pas Bunga dari anyaman bambu",
-        "gambar": "1752160861-download.jpeg"
-    },
-    {
-        "namaumkm" : "Toko Kerajinan Bambu",
-        "nama" : "Pas Bunga",
-        "harga" : "Rp. 12000",
-        "deskripsi" : "Pas Bunga dari anyaman bambu",
-        "gambar": "1752160861-download.jpeg"
-    }
+  {
+    "namaumkm": "Ladu Bu Euis",
+    "nama": "Ladu",
+    "harga": "12.000",
+    "deskripsi": "Ladu Isi 3",
+    "gambar": "ladu.jpg"
+  },
+  {
+    "namaumkm": "Ranginang Barokah",
+    "nama": "Ranginang Ketan",
+    "harga": "12.500",
+    "deskripsi": "Ranginang dengan Bahan dasar ketan harga perpack",
+    "gambar": "ranginang.jpg"
+  },
+  {
+    "namaumkm": "Ranginang Barokah",
+    "nama": "Ranginang Beras",
+    "harga": "6.500",
+    "deskripsi": "Ranginang dengan Bahan dasar beras harga perpack",
+    "gambar": "ranginang.jpg"
+  },
+  {
+    "namaumkm": "Ranginang Barokah",
+    "nama": "Asoy",
+    "harga": "5.500",
+    "deskripsi": "Makanan yang di olah dari singkong harga perpack",
+    "gambar": "asoy.jpg"
+  },
+  {
+    "namaumkm": "Nasi Goreng Kebuli Kang Abay",
+    "nama": "Nasi Goreng",
+    "harga": "13.000",
+    "deskripsi": "",
+    "gambar": "nasi_goreng.jpg"
+  },
+  {
+    "namaumkm": "Ranginang Komariah",
+    "nama": "Ranginang Kecil",
+    "harga": "11.000",
+    "deskripsi": "Ranginang tanpa micin",
+    "gambar": "ranginang.jpg"
+  },
+  {
+    "namaumkm": "Ranginang Komariah",
+    "nama": "Ranginang Besar",
+    "harga": "15.000",
+    "deskripsi": "Ranginang tanpa micin",
+    "gambar": "ranginang.jpg"
+  },
+  {
+    "namaumkm": "Ranginang Komariah",
+    "nama": "Ranginang Comot",
+    "harga": "11.000",
+    "deskripsi": "Ranginang tanpa micin",
+    "gambar": "ranginang_comot.jpg"
+  },
+  {
+    "namaumkm": "Ceumpal Bu Okoy",
+    "nama": "Ceumpal",
+    "harga": "20.000",
+    "deskripsi": "Ceumpal berbahan dasar dari limbah kerudung harga perkodi",
+    "gambar": ""
+  },
+  {
+    "namaumkm": "Nisam Phone",
+    "nama": "Jasa",
+    "harga": "-",
+    "deskripsi": "Jasa perbaikan handphone",
+    "gambar": "service.jpg"
+  },
+  {
+    "namaumkm": "Agus Konveksi",
+    "nama": "Jasa",
+    "harga": "",
+    "deskripsi": "Jasa Konveksi",
+    "gambar": "konveksi.jpg"
+  },
+  {
+    "namaumkm": "Seblak Imas",
+    "nama": "Seblak",
+    "harga": "3.000",
+    "deskripsi": "Harga mulai dari 3000",
+    "gambar": "seblak.jpg"
+  }
 ]
