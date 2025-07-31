@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail UMKM</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .produk-card {
+      border: 1px solid #eee;
+      border-radius: 8px;
+      transition: box-shadow 0.3s ease;
+      padding: 16px;
+      background-color: #fff;
+      cursor: pointer;
+    }
+    .produk-card:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    .produk-img {
+      height: 180px;
+      object-fit: cover;
+      width: 100%;
+      border-radius: 8px;
+    }
+    .floating-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+    .dropdown-fab {
+      display: none;
+      position: absolute;
+      bottom: 70px;
+      right: 0;
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-end;
+    }
+    .fab-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      color: white;
+    }
+    .fab-wa {
+      background-color: #25D366;
+    }
+    .fab-shopee {
+      background-color: #EE4D2D;
+    }
+    .fab-ig {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    }
+    .fab-main {
+      background-color: #000;
+      color: white;
+    }
+    .fab-icon:hover {
+      transform: scale(1.1);
+    }
+    .icon-container {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">UMKM Cikancung</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html#beranda">Beranda</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#desa">Tentang Desa</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#umkm">UMKM</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  <!-- Detail UMKM -->
+  <div class="container py-5 mt-3">
+    <div id="umkmDetail" class="mb-5"></div>
+    <h4 class="mb-3">Produk dari UMKM ini</h4>
+    <div id="produkList" class="row g-4"></div>
+  </div>
+
+  <!-- Floating Button -->
+  <div class="floating-button">
+    <div class="dropdown-fab" id="fabDropdown">
+      <a href="#" target="_blank" id="linkWA" class="fab-icon fab-wa" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+      <a href="#" target="_blank" id="linkShopee" class="fab-icon fab-shopee" title="Shopee"><i class="bi bi-bag"></i></a>
+      <a href="#" target="_blank" id="linkIG" class="fab-icon fab-ig" title="Instagram"><i class="bi bi-instagram"></i></a>
+    </div>
+    <div class="fab-icon fab-main" onclick="toggleFab()"><i class="bi bi-cart3"></i></div>
+  </div>
+
+  <!-- Modal Detail Produk -->
+  <div class="modal fade" id="produkModal" tabindex="-1" aria-labelledby="produkModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="produkModalLabel">Detail Produk</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row align-items-center">
+            <div class="col-md-5">
+              <img id="modalGambar" src="" class="img-fluid rounded shadow-sm" alt="">
+            </div>
+            <div class="col-md-7">
+              <h5 id="modalNama" class="fw-bold mb-2"></h5>
+              <p id="modalHarga" class="text-danger fw-semibold mb-2"></p>
+              <p id="modalDeskripsi" class="text-muted"></p>
+              <div class="icon-container">
+                <a href="#" target="_blank" id="modallinkWA" class="fab-icon fab-wa" title="WhatsApp">
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+                <a href="#" target="_blank" id="modallinkShopee" class="fab-icon fab-shopee" title="Shopee">
+                  <i class="bi bi-bag"></i>
+                </a>
+                <a href="#" target="_blank" id="modallinkIG" class="fab-icon fab-ig" title="Instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function toggleFab() {
+      const dropdown = document.getElementById("fabDropdown");
+      dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
+    }
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const namaUMKM = urlParams.get("umkm");
+    document.title = `Detail ${namaUMKM}`;
+
+    fetch('data/umkm.json')
+      .then(res => res.json())
+      .then(data => {
+        const umkm = data.find(u => u.namaumkm === namaUMKM);
+        if (umkm) {
+          document.getElementById('umkmDetail').innerHTML = `
+            <div class="row align-items-center">
+              <div class="col-md-4">
+                <img src="assets/images/${umkm.gambar}" alt="${umkm.namaumkm}" class="img-fluid rounded">
+              </div>
+              <div class="col-md-8">
+                <h2>${umkm.namaumkm}</h2>
+                <p><strong>Jenis:</strong> ${umkm.jenis}</p>
+                <p>${umkm.deskripsi}</p>
+                <p><strong>Kontak:</strong> ${umkm.kontak}</p>
+                <p><strong>Alamat:</strong> ${umkm.alamat}</p>
+              </div>
+            </div>
+          `;
+          document.getElementById("linkWA").href = umkm.linkwa || "#";
+          document.getElementById("linkShopee").href = umkm.linkshopee || "#";
+          document.getElementById("linkIG").href = umkm.linkig || "#";
+          
+          document.getElementById("modallinkWA").href = umkm.linkwa || "#";
+          document.getElementById("modallinkShopee").href = umkm.linkshopee || "#";
+          document.getElementById("modallinkIG").href = umkm.linkig || "#";
+        }
+      });
+
+    fetch('data/produkumkm.json')
+      .then(res => res.json())
+      .then(data => {
+        const produkUMKM = data.filter(p => p.namaumkm === namaUMKM);
+        const container = document.getElementById("produkList");
+        if (produkUMKM.length === 0) {
+          container.innerHTML = '<p class="text-muted">Belum ada produk yang terdaftar.</p>';
+        } else {
+          produkUMKM.forEach(produk => {
+            const col = document.createElement("div");
+            col.className = "col-md-4";
+            col.innerHTML = `
+              <div class="produk-card" data-nama="${produk.nama}" data-harga="${produk.harga}" data-deskripsi="${produk.deskripsi}" data-gambar="${produk.gambar}">
+                <img src="assets/images/${produk.gambar}" alt="${produk.nama}" class="produk-img mb-2">
+                <h6 class="fw-bold">${produk.nama}</h6>
+                <p class="text-danger fw-semibold">${produk.harga}</p>
+                <p class="small text-muted">${produk.deskripsi}</p>
+              </div>`;
+
+            col.querySelector('.produk-card').addEventListener('click', function () {
+              document.getElementById("modalNama").textContent = this.dataset.nama;
+              document.getElementById("modalHarga").textContent = this.dataset.harga;
+              document.getElementById("modalDeskripsi").textContent = this.dataset.deskripsi;
+              document.getElementById("modalGambar").src = `assets/images/${this.dataset.gambar}`;
+              document.getElementById("modalGambar").alt = this.dataset.nama;
+              const modal = new bootstrap.Modal(document.getElementById('produkModal'));
+              modal.show();
+  
+              const namaProduk = this.dataset.nama;
+              const baseWA = document.getElementById("modallinkWA").href.split('?')[0];
+              const pesanWA = `Halo, saya mau tanya stok untuk produk ${encodeURIComponent(namaProduk)} apakah masih tersedia?`;
+              const linkWA = `${baseWA}?text=${pesanWA}`;
+              document.getElementById("modallinkWA").href = linkWA;
+            });
+
+            container.appendChild(col);
+          });
+        }
+      });
+  </script>
+</body>
+</html>
