@@ -12,6 +12,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
     <style>
       .produk-card {
         border: 1px solid #eee;
@@ -53,16 +57,36 @@
         justify-content: center;
         align-items: center;
         font-size: 24px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        transition: background-color 0.3s ease, transform 0.3s ease;
         color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+        transition: all 0.3s ease;
       }
+
+      /* Efek hover */
+      .fab-icon:hover {
+        transform: scale(1.15);
+        box-shadow: 0 0 20px currentColor;
+      }
+
+      /* WhatsApp */
       .fab-wa {
         background-color: #25d366;
       }
+      .fab-wa:hover {
+        background-color: white;
+        color: white;
+      }
+
+      /* Shopee */
       .fab-shopee {
         background-color: #ee4d2d;
       }
+      .fab-shopee:hover {
+        background-color: white;
+        color: #ee4d2d;
+      }
+
+      /* Instagram */
       .fab-ig {
         background: radial-gradient(
           circle at 30% 107%,
@@ -73,17 +97,90 @@
           #285aeb 90%
         );
       }
+      .fab-ig:hover {
+        background-color: white;
+        color: #d6249f;
+      }
+      /* TikTok Gradient */
+      .fab-tiktok {
+        background: linear-gradient(
+          135deg,
+          #25f4ee 0%,
+          #000000 50%,
+          #ff0050 100%
+        );
+      }
+      .fab-tiktok:hover {
+        color: #ff0050;
+        background-color: white;
+      }
+      .fab-maps {
+        background: linear-gradient(45deg, #34a853, #4285f4, #fbbc05, #ea4335);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 2rem;
+        color: white;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        transition: all 0.3s ease;
+      }
+      .fab-maps .maps-icon {
+        width: 20px;
+        height: 30px;
+        margin-right: 2px;
+        display: block;
+      }
+
+      .fab-maps:hover {
+        transform: scale(1.1);
+        background-color: #c23329; /* Warna sedikit lebih gelap saat hover */
+      }
+
+      /* Tombol utama (hitam) */
       .fab-main {
         background-color: #000;
         color: white;
       }
-      .fab-icon:hover {
-        transform: scale(1.1);
+      .fab-main:hover {
+        background-color: white;
+        color: black;
+      }
+      /* Atur posisi ikon di dalam modal */
+      .modal .icon-container {
+        display: flex;
+        justify-content: center; /* Rapat ke kanan */
+        gap: 12px;
+        margin-top: 10px;
       }
       .icon-container {
         display: flex;
-        gap: 12px;
-        margin-top: 10px;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 15px;
+      }
+
+      .fab-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        color: white;
+        font-size: 22px;
+        text-decoration: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .fab-icon:hover {
+        transform: scale(1.15);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
       }
     </style>
   </head>
@@ -94,7 +191,9 @@
       class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
     >
       <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">UMKM Cikancung</a>
+        <a class="navbar-brand fw-bold" href="index.html"
+          >UMKM Desa Cikancung</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -159,6 +258,24 @@
           title="Instagram"
           ><i class="bi bi-instagram"></i
         ></a>
+        <a
+          href="#"
+          target="_blank"
+          id="modallinktiktok"
+          class="fab-icon fab-tiktok"
+          title="Tiktok"
+        >
+          <i class="bi bi-tiktok"></i>
+        </a>
+        <a
+          href="#"
+          target="_blank"
+          id="modallinkmaps"
+          class="fab-icon fab-maps"
+          title="Lokasi"
+        >
+          <img src="assets/img/maps.png" alt="Maps" class="maps-icon" />
+        </a>
       </div>
       <div class="fab-icon fab-main" onclick="toggleFab()">
         <i class="bi bi-cart3"></i>
@@ -198,7 +315,7 @@
                 <h5 id="modalNama" class="fw-bold mb-2"></h5>
                 <p id="modalHarga" class="text-danger fw-semibold mb-2"></p>
                 <p id="modalDeskripsi" class="text-muted"></p>
-                <div class="icon-container">
+                <div class="icon-container" id="socialIcons">
                   <a
                     href="#"
                     target="_blank"
@@ -226,6 +343,28 @@
                   >
                     <i class="bi bi-instagram"></i>
                   </a>
+                  <a
+                    href="#"
+                    target="_blank"
+                    id="modallinktiktok"
+                    class="fab-icon fab-tiktok"
+                    title="Tiktok"
+                  >
+                    <i class="bi bi-tiktok"></i>
+                  </a>
+                  <a
+                    href="#"
+                    target="_blank"
+                    id="modallinkmaps"
+                    class="fab-icon fab-maps"
+                    title="Lokasi"
+                  >
+                    <img
+                      src="assets/img/maps.png"
+                      alt="Maps"
+                      class="maps-icon"
+                    />
+                  </a>
                 </div>
               </div>
             </div>
@@ -237,6 +376,69 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+      function generateIcons(container, data, produkNama = null) {
+        container.innerHTML = "";
+
+        const icons = [
+          {
+            type: "wa",
+            link: data.linkwa,
+            color: "#25D366",
+            icon: '<i class="bi bi-whatsapp"></i>',
+          },
+          {
+            type: "ig",
+            link: data.linkig,
+            color:
+              "linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)",
+            icon: '<i class="bi bi-instagram"></i>',
+          },
+          {
+            type: "shopee",
+            link: data.linkshopee,
+            color: "#FF5722",
+            icon: '<i class="bi bi-bag"></i>',
+          },
+          {
+            type: "tiktok",
+            link: data.linktiktok,
+            color: "#000000",
+            icon: '<i class="bi bi-tiktok"></i>',
+          },
+          {
+            type: "maps",
+            link: data.koordinat
+              ? `https://www.google.com/maps?q=${data.koordinat}`
+              : "",
+            color: "#4285F4",
+            icon: '<img src="assets/img/maps.png" alt="Maps" class="maps-icon" />',
+          },
+        ];
+
+        icons.forEach((item) => {
+          if (item.link && item.link.trim() !== "") {
+            let linkHref = item.link;
+
+            // Kalau di modal dan ada nama produk, tambahkan pesan ke WhatsApp
+            if (item.type === "wa" && produkNama) {
+              const baseWA = linkHref.split("?")[0];
+              const pesanWA = `Halo, saya mau tanya stok untuk produk ${encodeURIComponent(
+                produkNama
+              )} apakah masih tersedia?`;
+              linkHref = `${baseWA}?text=${pesanWA}`;
+            }
+
+            const a = document.createElement("a");
+            a.href = linkHref;
+            a.target = "_blank";
+            a.className = `fab-icon fab-${item.type}`;
+            a.style.background = item.color;
+            a.innerHTML = item.icon;
+            container.appendChild(a);
+          }
+        });
+      }
+
       function toggleFab() {
         const dropdown = document.getElementById("fabDropdown");
         dropdown.style.display =
@@ -247,40 +449,42 @@
       const namaUMKM = urlParams.get("umkm");
       document.title = `Detail ${namaUMKM}`;
 
+      let currentUMKM = null;
+
+      // Ambil data UMKM
       fetch("data/umkm.json?v=" + Date.now())
         .then((res) => res.json())
         .then((data) => {
           const umkm = data.find((u) => u.namaumkm === namaUMKM);
           if (umkm) {
-            document.getElementById("umkmDetail").innerHTML = `
-            <div class="row align-items-center">
-              <div class="col-md-4">
-                <img src="assets/images/${umkm.gambar}" alt="${umkm.namaumkm}" class="img-fluid rounded">
-              </div>
-              <div class="col-md-8">
-                <h2>${umkm.namaumkm}</h2>
-                <p><strong>Jenis:</strong> ${umkm.jenis}</p>
-                <p>${umkm.deskripsi}</p>
-                <p><strong>Alamat:</strong> ${umkm.alamat}</p>
-              </div>
-            </div>
-          `;
-            document.getElementById("linkWA").href = umkm.linkwa || "#";
-            document.getElementById("linkShopee").href = umkm.linkshopee || "#";
-            document.getElementById("linkIG").href = umkm.linkig || "#";
+            currentUMKM = umkm;
 
-            document.getElementById("modallinkWA").href = umkm.linkwa || "#";
-            document.getElementById("modallinkShopee").href =
-              umkm.linkshopee || "#";
-            document.getElementById("modallinkIG").href = umkm.linkig || "#";
+            document.getElementById("umkmDetail").innerHTML = `
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <img src="assets/images/${umkm.gambar}" alt="${umkm.namaumkm}" class="img-fluid rounded">
+          </div>
+          <div class="col-md-8">
+            <h2>${umkm.namaumkm}</h2>
+            <p><strong>Jenis:</strong> ${umkm.jenis}</p>
+            <p>${umkm.deskripsi}</p>
+            <p><strong>Alamat:</strong> ${umkm.alamat}</p>
+          </div>
+        </div>
+      `;
+
+            // Buat ikon di floating button
+            generateIcons(document.getElementById("fabDropdown"), umkm);
           }
         });
 
+      // Ambil produk
       fetch("data/produkumkm.json?v=" + Date.now())
         .then((res) => res.json())
         .then((data) => {
           const produkUMKM = data.filter((p) => p.namaumkm === namaUMKM);
           const container = document.getElementById("produkList");
+
           if (produkUMKM.length === 0) {
             container.innerHTML =
               '<p class="text-muted">Belum ada produk yang terdaftar.</p>';
@@ -289,12 +493,13 @@
               const col = document.createElement("div");
               col.className = "col-md-4";
               col.innerHTML = `
-              <div class="produk-card" data-nama="${produk.nama}" data-harga="${produk.harga}" data-deskripsi="${produk.deskripsi}" data-gambar="${produk.gambar}">
-                <img src="assets/images/${produk.gambar}" alt="${produk.nama}" class="produk-img mb-2">
-                <h6 class="fw-bold">${produk.nama}</h6>
-                <p class="text-danger fw-semibold">${produk.harga}</p>
-                <p class="small text-muted">${produk.deskripsi}</p>
-              </div>`;
+          <div class="produk-card" data-nama="${produk.nama}" data-harga="${produk.harga}" data-deskripsi="${produk.deskripsi}" data-gambar="${produk.gambar}">
+            <img src="assets/images/${produk.gambar}" alt="${produk.nama}" class="produk-img mb-2">
+            <h6 class="fw-bold">${produk.nama}</h6>
+            <p class="text-danger fw-semibold">${produk.harga}</p>
+            <p class="small text-muted">${produk.deskripsi}</p>
+          </div>
+        `;
 
               col
                 .querySelector(".produk-card")
@@ -310,20 +515,17 @@
                   ).src = `assets/images/${this.dataset.gambar}`;
                   document.getElementById("modalGambar").alt =
                     this.dataset.nama;
-                  const modal = new bootstrap.Modal(
-                    document.getElementById("produkModal")
-                  );
-                  modal.show();
 
-                  const namaProduk = this.dataset.nama;
-                  const baseWA = document
-                    .getElementById("modallinkWA")
-                    .href.split("?")[0];
-                  const pesanWA = `Halo, saya mau tanya stok untuk produk ${encodeURIComponent(
-                    namaProduk
-                  )} apakah masih tersedia?`;
-                  const linkWA = `${baseWA}?text=${pesanWA}`;
-                  document.getElementById("modallinkWA").href = linkWA;
+                  // Buat ikon sosial di modal, tambahkan pesan ke WA
+                  generateIcons(
+                    document.getElementById("socialIcons"),
+                    currentUMKM,
+                    this.dataset.nama
+                  );
+
+                  new bootstrap.Modal(
+                    document.getElementById("produkModal")
+                  ).show();
                 });
 
               container.appendChild(col);

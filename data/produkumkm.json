@@ -2,65 +2,65 @@
   {
     "namaumkm": "Ladu Bu Euis",
     "nama": "Ladu",
-    "harga": 12000,
+    "harga": "Rp12.000",
     "deskripsi": "Ladu Isi 3",
     "gambar": "ladu.jpg"
   },
   {
     "namaumkm": "Ranginang Barokah",
     "nama": "Ranginang Ketan",
-    "harga": 12500,
+    "harga": "Rp12.500",
     "deskripsi": "Ranginang dengan Bahan dasar ketan harga perpack",
     "gambar": "ranginang.jpg"
   },
   {
     "namaumkm": "Ranginang Barokah",
     "nama": "Ranginang Beras",
-    "harga": 6500,
+    "harga": "Rp6.500",
     "deskripsi": "Ranginang dengan Bahan dasar beras harga perpack",
     "gambar": "ranginang.jpg"
   },
   {
     "namaumkm": "Ranginang Barokah",
     "nama": "Asoy",
-    "harga": 5500,
+    "harga": "Rp5.500",
     "deskripsi": "Makanan yang di olah dari singkong harga perpack",
     "gambar": "asoy.jpg"
   },
   {
     "namaumkm": "Nasi Goreng Kebuli Kang Abay",
     "nama": "Nasi Goreng",
-    "harga": 13000,
+    "harga": "Rp13.000",
     "deskripsi": "",
     "gambar": "nasi_goreng.jpg"
   },
   {
     "namaumkm": "Ranginang Komariah",
     "nama": "Ranginang Kecil",
-    "harga": 11000,
+    "harga": "Rp11.000",
     "deskripsi": "Ranginang tanpa micin",
     "gambar": "ranginang.jpg"
   },
   {
     "namaumkm": "Ranginang Komariah",
     "nama": "Ranginang Besar",
-    "harga": 15000,
+    "harga": "Rp15.000",
     "deskripsi": "Ranginang tanpa micin",
     "gambar": "ranginang.jpg"
   },
   {
     "namaumkm": "Ranginang Komariah",
     "nama": "Ranginang Comot",
-    "harga": 11000,
+    "harga": "Rp11.000",
     "deskripsi": "Ranginang tanpa micin",
     "gambar": "ranginang_comot.jpg"
   },
   {
     "namaumkm": "Ceumpal Bu Okoy",
     "nama": "Ceumpal",
-    "harga": 20000,
+    "harga": "Rp20.000",
     "deskripsi": "Ceumpal berbahan dasar dari limbah kerudung harga perkodi",
-    "gambar": ""
+    "gambar": "ceumpal.jpg"
   },
   {
     "namaumkm": "Nisam Phone",
@@ -79,119 +79,119 @@
   {
     "namaumkm": "Seblak Imas",
     "nama": "Seblak",
-    "harga": 3000,
+    "harga": "Rp3.000",
     "deskripsi": "Harga mulai dari 3000",
     "gambar": "seblak.jpg"
   },
   {
     "namaumkm": "3 Saudara",
     "nama": "Kerupuk Asoy",
-    "harga": 6000,
+    "harga": "Rp6.000",
     "deskripsi": "Tersedia Rasa Jengkol, Kencur, Ori",
     "gambar": "asoy.jpg"
   },
   {
     "namaumkm": "Tri Star",
     "nama": "Kerupuk Kembang",
-    "harga": 6500,
+    "harga": "Rp6.500",
     "deskripsi": "Tersedia Warna Pink, Merah, Oren, Kuning, Hijau, dan Ungu",
     "gambar": "kerupuk_kembang.jpg"
   },
   {
     "namaumkm": "Tri Star",
     "nama": "Ranginang",
-    "harga": 12000,
+    "harga": "Rp12.000",
     "deskripsi": "Tersedia Rasa Ori dan Terasi",
     "gambar": "Ranginang.jpg"
   },
   {
     "namaumkm": "Tri Star",
     "nama": "Ranginang Ketan Hitam",
-    "harga": 15000,
+    "harga": "Rp15.000",
     "deskripsi": "",
     "gambar": "Ranginang.jpg"
   },
   {
     "namaumkm": "Cap 4 Bintang",
     "nama": "Ranginang",
-    "harga": 6500,
+    "harga": "Rp6.500",
     "deskripsi": "Tersedia Warna Pink, Merah, Oren, Kuning, Hijau, dan Ungu",
     "gambar": "Ranginang.jpg"
   },
   {
     "namaumkm": "Cap 4 Bintang",
     "nama": "Asoy",
-    "harga": 5000,
+    "harga": "Rp5.000",
     "deskripsi": "",
     "gambar": "asoy.jpg"
   },
   {
     "namaumkm": "Cap 4 Bintang",
     "nama": "Ranginang Besar",
-    "harga": 12000,
+    "harga": "Rp12.000",
     "deskripsi": "",
     "gambar": "Ranginang.jpg"
   },
   {
     "namaumkm": "Ranginang Yayah",
     "nama": "Ranginang",
-    "harga": 12000,
+    "harga": "Rp12.000",
     "deskripsi": "Tersedia variant Terasi dan Bawang",
     "gambar": "Ranginang.jpg"
   },
   {
     "namaumkm": "Ranginang Yayah",
     "nama": "Kerupuk Kembang",
-    "harga": 6500,
+    "harga": "Rp6.500",
     "deskripsi": "",
     "gambar": "kerupuk_kembang.jpg"
   },
   {
     "namaumkm": "Aneka Kerupuk Ceu Ipah",
     "nama": "Rangining",
-    "harga": 6500,
+    "harga": "Rp6.500",
     "deskripsi": "",
-    "gambar": ""
+    "gambar": "Ranginang.jpg"
   },
   {
     "namaumkm": "Aneka Kerupuk Ceu Ipah",
     "nama": "Solondok",
-    "harga": 12000,
+    "harga": "Rp12.000",
     "deskripsi": "",
     "gambar": ""
   },
   {
     "namaumkm": "Aneka Kerupuk Ceu Ipah",
     "nama": "Asoy",
-    "harga": 5000,
+    "harga": "Rp5.000",
     "deskripsi": "",
     "gambar": "asoy.jpg"
   },
   {
     "namaumkm": "Aneka Kerupuk Ceu Ipah",
     "nama": "Ranginang",
-    "harga": 12000,
+    "harga": "Rp12.000",
     "deskripsi": "",
     "gambar": "Ranginang.jpg"
   },
   {
     "namaumkm": "Aneka Kerupuk Ceu Ipah",
     "nama": "Atut",
-    "harga": 7500,
+    "harga": "Rp7.500",
     "deskripsi": "",
     "gambar": ""
   },
   {
     "namaumkm": "Aneka Kerupuk Ceu Ipah",
     "nama": "Baranang",
-    "harga": 7500,
+    "harga": "Rp7.500",
     "deskripsi": "",
     "gambar": ""
   },
   {
     "namaumkm": "Ceumpal Bu Kokom",
     "nama": "Ceumpal",
-    "harga": 13000,
+    "harga": "Rp13.000",
     "deskripsi": "Harga per Kodi",
     "gambar": "ceumpal.jpg"
   },
@@ -205,7 +205,7 @@
   {
     "namaumkm": "Gilang Rasio",
     "nama": "Bonsai",
-    "harga": 2000000,
+    "harga": "Rp2.000.000",
     "deskripsi": "Harga Mulai dari 2000000 dengan kondisi 40%",
     "gambar": "bonsai2.jpg"
   }

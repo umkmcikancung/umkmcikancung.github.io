@@ -20,6 +20,63 @@
         margin: 0;
         padding: 0;
       }
+      .social-icon {
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: white;
+        font-size: 32px;
+        text-decoration: none;
+        transition: all 0.4s ease;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .social-icon:hover {
+        transform: scale(1.15);
+        box-shadow: 0 0 20px currentColor;
+      }
+
+      /* WhatsApp */
+      .whatsapp {
+        background-color: #25d366;
+      }
+      .whatsapp:hover {
+        color: #25d366;
+        background-color: white;
+      }
+
+      /* TikTok Gradient */
+      .tiktok {
+        background: linear-gradient(
+          135deg,
+          #25f4ee 0%,
+          #000000 50%,
+          #ff0050 100%
+        );
+      }
+      .tiktok:hover {
+        color: #ff0050;
+        background-color: white;
+      }
+
+      /* Instagram Gradient */
+      .instagram {
+        background: radial-gradient(
+          circle at 30% 107%,
+          #fdf497 0%,
+          #fdf497 5%,
+          #fd5949 45%,
+          #d6249f 60%,
+          #285aeb 90%
+        );
+      }
+      .instagram:hover {
+        color: #d6249f;
+        background-color: white;
+      }
       .navbar-custom {
         background-color: rgba(0, 0, 0, 0.5);
         transition: transform 0.3s ease;
@@ -80,7 +137,7 @@
       class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top shadow-sm"
     >
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#">UMKM Cikancung</a>
+        <a class="navbar-brand fw-bold" href="#">UMKM Desa Cikancung</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -195,12 +252,36 @@
     <!-- Kontak -->
     <section class="py-5 bg-light" id="kontak">
       <div class="container text-center">
-        <h2 class="mb-3">Kontak Kami</h2>
-        <p>
-          Email: desa.cikancung@example.com<br />
-          WA: 0812-3456-7890<br />
-          Alamat: Desa Cikancung, Kecamatan Cikancung, Kabupaten Bandung
-        </p>
+        <h2 class="mb-4">Kontak Kami</h2>
+
+        <div class="d-flex justify-content-center gap-3">
+          <!-- WhatsApp -->
+          <a
+            href="https://wa.me/628123456789"
+            target="_blank"
+            class="social-icon whatsapp"
+          >
+            <i class="bi bi-whatsapp"></i>
+          </a>
+
+          <!-- TikTok -->
+          <a
+            href="https://www.tiktok.com/@username"
+            target="_blank"
+            class="social-icon tiktok"
+          >
+            <i class="bi bi-tiktok"></i>
+          </a>
+
+          <!-- Instagram -->
+          <a
+            href="https://instagram.com/username"
+            target="_blank"
+            class="social-icon instagram"
+          >
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
       </div>
     </section>
 
