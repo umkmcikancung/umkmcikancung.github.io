@@ -29,10 +29,38 @@
   },
   {
     "namaumkm": "Nasi Goreng Kebuli Kang Abay",
-    "nama": "Nasi Goreng",
-    "harga": "Rp13.000",
-    "deskripsi": "",
-    "gambar": "nasi_goreng.jpg"
+    "nama": "Nasi Goreng Kebuli Spesial",
+    "harga": "Rp28.500",
+    "deskripsi": "Dengan bumbu kebuli dan toping telur, ayam, bakso, sosis, dan ati ampela",
+    "gambar": "kebuli_spesial.jpg"
+  },
+  {
+    "namaumkm": "Nasi Goreng Kebuli Kang Abay",
+    "nama": "Nasi Goreng Kebuli Ayam",
+    "harga": "Rp24.000",
+    "deskripsi": "Bumbu kebuli dengan toping telur dan ayam. Serta ada variant lain diantaranya Nasi goreng kebuli ati ampela, Nasi goreng kebuli bakso, dan Nasi goreng kebuli sosis",
+    "gambar": "kebuli_ayam.jpg"
+  },
+  {
+    "namaumkm": "Nasi Goreng Kebuli Kang Abay",
+    "nama": "Mie Goreng Spesial",
+    "harga": "Rp25.000",
+    "deskripsi": "Dengan bumbu andalan dan toping telur, ayam, bakso, sosis, dan ati ampela",
+    "gambar": "mie_spesial.jpg"
+  },
+  {
+    "namaumkm": "Nasi Goreng Kebuli Kang Abay",
+    "nama": "Mie Goreng Ayam",
+    "harga": "Rp22.500",
+    "deskripsi": "Bumbu Andalan dengan toping telur dan ayam. Serta ada variant lain diantaranya Nasi goreng kebuli ati ampela, Nasi goreng kebuli bakso, dan Nasi goreng kebuli sosis",
+    "gambar": "mie_ayam.jpg"
+  },
+  {
+    "namaumkm": "Nasi Goreng Kebuli Kang Abay",
+    "nama": "Otokowok Kebuli",
+    "harga": "Rp30.000",
+    "deskripsi": "Nasi goreng tanpa kecap dengan tambahan kwetiau goreng, sayura, telor ceplok/dadar dengan toping baso, sosis dan ayam",
+    "gambar": "otokowok.jpg"
   },
   {
     "namaumkm": "Ranginang Komariah",
@@ -208,5 +236,19 @@
     "harga": "Rp2.000.000",
     "deskripsi": "Harga Mulai dari 2000000 dengan kondisi 40%",
     "gambar": "bonsai2.jpg"
+  },
+  {
+    "namaumkm": "Kacang Bintang",
+    "nama": "Kacang Bintang",
+    "harga": "-",
+    "deskripsi": "",
+    "gambar": "kk.jpg"
+  },
+  {
+    "namaumkm": "Kerajinan Bambu",
+    "nama": "Kerajinan Bambu",
+    "harga": "-",
+    "deskripsi": "Aneka macam kerajinan yang terbuat dari bambu",
+    "gambar": "kerajinan.jpg"
   }
 ]
