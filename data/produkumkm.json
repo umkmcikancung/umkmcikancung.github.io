@@ -130,7 +130,7 @@
     "nama": "Ranginang",
     "harga": "Rp12.000",
     "deskripsi": "Tersedia Rasa Ori dan Terasi",
-    "gambar": "Ranginang_tristar.png"
+    "gambar": "ranginang_tristar.png"
   },
   {
     "namaumkm": "Tri Star",
@@ -238,3 +238,4 @@
     "gambar": "bonsai2.jpg"
   }
 ]
+
