@@ -11,55 +11,55 @@
     "nama": "Ranginang Ketan",
     "harga": "Rp12.500",
     "deskripsi": "Ranginang dengan Bahan dasar ketan harga perpack",
-    "gambar": "ranginang.jpg"
+    "gambar": "ranginangketan_barokah.png"
   },
   {
     "namaumkm": "Ranginang Barokah",
     "nama": "Ranginang Beras",
     "harga": "Rp6.500",
     "deskripsi": "Ranginang dengan Bahan dasar beras harga perpack",
-    "gambar": "ranginang.jpg"
+    "gambar": "ranginangberas_barokah.png"
   },
   {
     "namaumkm": "Ranginang Barokah",
     "nama": "Asoy",
     "harga": "Rp5.500",
     "deskripsi": "Makanan yang di olah dari singkong harga perpack",
-    "gambar": "asoy.jpg"
+    "gambar": "asoy_barokah.png"
   },
   {
     "namaumkm": "Nasi Goreng Kebuli Kang Abay",
     "nama": "Nasi Goreng Kebuli Spesial",
     "harga": "Rp28.500",
-    "deskripsi": "Dengan bumbu kebuli dan toping telur, ayam, bakso, sosis, dan ati ampela",
+    "deskripsi": "Dengan bumbu kebuli dan toping telur, ayam, bakso, sosis, dan ati ampela",
     "gambar": "kebuli_spesial.jpg"
   },
   {
     "namaumkm": "Nasi Goreng Kebuli Kang Abay",
     "nama": "Nasi Goreng Kebuli Ayam",
     "harga": "Rp24.000",
-    "deskripsi": "Bumbu kebuli dengan toping telur dan ayam. Serta ada variant lain diantaranya Nasi goreng kebuli ati ampela, Nasi goreng kebuli bakso, dan Nasi goreng kebuli sosis",
+    "deskripsi": "Bumbu kebuli dengan toping telur dan ayam. Serta ada variant lain: 1. Nasi goreng kebuli ayam, 2. Nasi goreng kebuli ati ampela, 3. Nasi goreng kebuli bakso, 4. Nasi goreng kebuli sosis",
     "gambar": "kebuli_ayam.jpg"
-  },
-  {
-    "namaumkm": "Nasi Goreng Kebuli Kang Abay",
-    "nama": "Mie Goreng Spesial",
-    "harga": "Rp25.000",
-    "deskripsi": "Dengan bumbu andalan dan toping telur, ayam, bakso, sosis, dan ati ampela",
-    "gambar": "mie_spesial.jpg"
   },
   {
     "namaumkm": "Nasi Goreng Kebuli Kang Abay",
     "nama": "Mie Goreng Ayam",
     "harga": "Rp22.500",
-    "deskripsi": "Bumbu Andalan dengan toping telur dan ayam. Serta ada variant lain diantaranya Nasi goreng kebuli ati ampela, Nasi goreng kebuli bakso, dan Nasi goreng kebuli sosis",
+    "deskripsi": "Dengan bumbu andalan dengan toping telur dan ayam. Serta ada variant lain: 1. Mie goreng ayam, 2. Mie goreng ati ampela, 3. Mie goreng bakso, 4. Mie goreng sosis",
     "gambar": "mie_ayam.jpg"
+  },
+  {
+    "namaumkm": "Nasi Goreng Kebuli Kang Abay",
+    "nama": "Mie Goreng Spesial",
+    "harga": "Rp25.000",
+    "deskripsi": "Dengan bumbu andalan dan toping telur, ayam, bakso, sosis, dan ati ampela",
+    "gambar": "mie_spesial.jpg"
   },
   {
     "namaumkm": "Nasi Goreng Kebuli Kang Abay",
     "nama": "Otokowok Kebuli",
     "harga": "Rp30.000",
-    "deskripsi": "Nasi goreng tanpa kecap dengan tambahan kwetiau goreng, sayura, telor ceplok/dadar dengan toping baso, sosis dan ayam",
+    "deskripsi": "Nasi goreng tanpa kecap dengan tambahan kwetiau goreng, sayura, telor ceplok/dadar dengan toping baso, sosis dan ayam",
     "gambar": "otokowok.jpg"
   },
   {
@@ -67,21 +67,21 @@
     "nama": "Ranginang Kecil",
     "harga": "Rp11.000",
     "deskripsi": "Ranginang tanpa micin",
-    "gambar": "ranginang.jpg"
+    "gambar": "ranginangkecil_komariah.png"
   },
   {
     "namaumkm": "Ranginang Komariah",
     "nama": "Ranginang Besar",
     "harga": "Rp15.000",
     "deskripsi": "Ranginang tanpa micin",
-    "gambar": "ranginang.jpg"
+    "gambar": "ranginangbesar_komariah.png"
   },
   {
     "namaumkm": "Ranginang Komariah",
     "nama": "Ranginang Comot",
     "harga": "Rp11.000",
     "deskripsi": "Ranginang tanpa micin",
-    "gambar": "ranginang_comot.jpg"
+    "gambar": "ranginangcomot_komariah.png"
   },
   {
     "namaumkm": "Ceumpal Bu Okoy",
@@ -100,7 +100,7 @@
   {
     "namaumkm": "Agus Konveksi",
     "nama": "Jasa",
-    "harga": "",
+    "harga": "-",
     "deskripsi": "Jasa Konveksi",
     "gambar": "konveksi.jpg"
   },
@@ -116,35 +116,35 @@
     "nama": "Kerupuk Asoy",
     "harga": "Rp6.000",
     "deskripsi": "Tersedia Rasa Jengkol, Kencur, Ori",
-    "gambar": "asoy.jpg"
+    "gambar": "asoy_3saudara.png"
   },
   {
     "namaumkm": "Tri Star",
     "nama": "Kerupuk Kembang",
     "harga": "Rp6.500",
     "deskripsi": "Tersedia Warna Pink, Merah, Oren, Kuning, Hijau, dan Ungu",
-    "gambar": "kerupuk_kembang.jpg"
+    "gambar": "kerupuk_kembang_tristar.png"
   },
   {
     "namaumkm": "Tri Star",
     "nama": "Ranginang",
     "harga": "Rp12.000",
     "deskripsi": "Tersedia Rasa Ori dan Terasi",
-    "gambar": "Ranginang.jpg"
+    "gambar": "Ranginang_tristar.png"
   },
   {
     "namaumkm": "Tri Star",
     "nama": "Ranginang Ketan Hitam",
     "harga": "Rp15.000",
     "deskripsi": "",
-    "gambar": "Ranginang.jpg"
+    "gambar": "ranginangketan_tristar.png"
   },
   {
     "namaumkm": "Cap 4 Bintang",
     "nama": "Ranginang",
     "harga": "Rp6.500",
     "deskripsi": "Tersedia Warna Pink, Merah, Oren, Kuning, Hijau, dan Ungu",
-    "gambar": "Ranginang.jpg"
+    "gambar": "ranginang_cap4bintang.png"
   },
   {
     "namaumkm": "Cap 4 Bintang",
@@ -165,14 +165,14 @@
     "nama": "Ranginang",
     "harga": "Rp12.000",
     "deskripsi": "Tersedia variant Terasi dan Bawang",
-    "gambar": "Ranginang.jpg"
+    "gambar": "Ranginang.png"
   },
   {
     "namaumkm": "Ranginang Yayah",
     "nama": "Kerupuk Kembang",
     "harga": "Rp6.500",
     "deskripsi": "",
-    "gambar": "kerupuk_kembang.jpg"
+    "gambar": "kerupuk_kembang.png"
   },
   {
     "namaumkm": "Aneka Kerupuk Ceu Ipah",
@@ -236,19 +236,5 @@
     "harga": "Rp2.000.000",
     "deskripsi": "Harga Mulai dari 2000000 dengan kondisi 40%",
     "gambar": "bonsai2.jpg"
-  },
-  {
-    "namaumkm": "Kacang Bintang",
-    "nama": "Kacang Bintang",
-    "harga": "-",
-    "deskripsi": "",
-    "gambar": "kk.jpg"
-  },
-  {
-    "namaumkm": "Kerajinan Bambu",
-    "nama": "Kerajinan Bambu",
-    "harga": "-",
-    "deskripsi": "Aneka macam kerajinan yang terbuat dari bambu",
-    "gambar": "kerajinan.jpg"
   }
 ]
