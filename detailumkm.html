@@ -123,7 +123,7 @@
         background-color: white;
       }
       .fab-maps {
-        background: linear-gradient(45deg, #34a853, #4285f4, #fbbc05, #ea4335);
+        background-color: #ffffff;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 2rem;
@@ -142,11 +142,12 @@
         height: 30px;
         margin-right: 2px;
         display: block;
+        background-color: #ffffff;
       }
 
       .fab-maps:hover {
         transform: scale(1.1);
-        background-color: #c23329; /* Warna sedikit lebih gelap saat hover */
+        background-color: #ffffff; /* Warna sedikit lebih gelap saat hover */
       }
 
       /* Tombol utama (hitam) */
@@ -438,10 +439,8 @@
           },
           {
             type: "maps",
-            link: data.koordinat
-              ? `https://www.google.com/maps?q=${data.koordinat}`
-              : "",
-            color: "#4285F4",
+            link: data.koordinat ? `${data.koordinat}` : "",
+            color: "#ffffff",
             icon: '<img src="assets/img/maps.png" alt="Maps" class="maps-icon" />',
           },
         ];
@@ -493,7 +492,7 @@
             document.getElementById("umkmDetail").innerHTML = `
         <div class="row align-items-center">
           <div class="col-md-4">
-            <img src="assets/images/${umkm.gambar}" alt="${umkm.namaumkm}" class="img-fluid rounded">
+            <img src="assets/images/${umkm.gambar}" alt="${umkm.namaumkm}" class="img-fluid rounded" style="width: 500px; height:400px;">
           </div>
           <div class="col-md-8">
             <h2>${umkm.namaumkm}</h2>

@@ -130,7 +130,7 @@
     "nama": "Ranginang",
     "harga": "Rp12.000",
     "deskripsi": "Tersedia Rasa Ori dan Terasi",
-    "gambar": "ranginang_tristar.png"
+    "gambar": "Ranginang_tristar.png"
   },
   {
     "namaumkm": "Tri Star",
@@ -186,7 +186,7 @@
     "nama": "Solondok",
     "harga": "Rp12.000",
     "deskripsi": "",
-    "gambar": ""
+    "gambar": "solondok.jpg"
   },
   {
     "namaumkm": "Aneka Kerupuk Ceu Ipah",
@@ -207,14 +207,14 @@
     "nama": "Atut",
     "harga": "Rp7.500",
     "deskripsi": "",
-    "gambar": ""
+    "gambar": "atut.jpg"
   },
   {
     "namaumkm": "Aneka Kerupuk Ceu Ipah",
     "nama": "Baranang",
     "harga": "Rp7.500",
     "deskripsi": "",
-    "gambar": ""
+    "gambar": "baranang.jpeg"
   },
   {
     "namaumkm": "Ceumpal Bu Kokom",
@@ -238,4 +238,3 @@
     "gambar": "bonsai2.jpg"
   }
 ]
-
